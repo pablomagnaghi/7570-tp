@@ -23,7 +23,7 @@ public class Principal {
 		  // We construct it with the target amount of change provided
 		  // by the user.
 		  // ------------------------------------------------------------
-		  int targetAmount = Integer.parseInt("25");
+		  int targetAmount = 88;
 		  FitnessFunction myFunc =
 		    new MinimizingMakeChangeFitnessFunction( targetAmount );
 
@@ -71,19 +71,19 @@ public class Principal {
 
 		  System.out.println(
 		      MinimizingMakeChangeFitnessFunction.getNumberOfCoinsAtGene(
-		          bestSolutionSoFar, 0 ) + " quarters." );
+		          bestSolutionSoFar, 0 ) + " quarters - 25 Centavos." );
 
 		  System.out.println(
 		      MinimizingMakeChangeFitnessFunction.getNumberOfCoinsAtGene(
-		          bestSolutionSoFar, 1 ) + " dimes." );
+		          bestSolutionSoFar, 1 ) + " dimes - 10 Centavos." );
 
 		  System.out.println(
 		      MinimizingMakeChangeFitnessFunction.getNumberOfCoinsAtGene(
-		          bestSolutionSoFar, 2 ) + " nickels." );
+		          bestSolutionSoFar, 2 ) + " nickels - 5 Centavos." );
 
 		  System.out.println(
 		      MinimizingMakeChangeFitnessFunction.getNumberOfCoinsAtGene(
-		          bestSolutionSoFar, 3 ) + " pennies." );
+		          bestSolutionSoFar, 3 ) + " pennies - 1 Centavo." );
 
 		  System.out.println( "For a total of " +
 		      MinimizingMakeChangeFitnessFunction.amountOfChange(
