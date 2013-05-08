@@ -23,7 +23,7 @@ public class Principal {
 		  // We construct it with the target amount of change provided
 		  // by the user.
 		  // ------------------------------------------------------------
-		  int targetAmount = Integer.parseInt(args[0]);
+		  int targetAmount = Integer.parseInt("25");
 		  FitnessFunction myFunc =
 		    new MinimizingMakeChangeFitnessFunction( targetAmount );
 
